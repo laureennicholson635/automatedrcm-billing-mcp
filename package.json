@@ -1,10 +1,12 @@
 {
   "name": "automatedrcm-billing-mcp",
   "version": "1.0.0",
+  "mcpName": "io.github.laureennicholson635/automatedrcm-billing-mcp",
   "description": "MCP server: medical-billing intelligence for AI agents — prior-auth checks, denial decoding, claim triage, appeal assessments, PHI de-id demo. Pay-per-call via x402 (USDC on Base).",
   "type": "module",
   "bin": { "automatedrcm-billing-mcp": "index.js" },
   "main": "index.js",
+  "files": ["index.js", "README.md", "LICENSE"],
   "engines": { "node": ">=18" },
   "keywords": ["mcp", "modelcontextprotocol", "medical-billing", "rcm", "prior-authorization", "denial-codes", "x402", "ai-agents", "healthcare"],
   "author": "Laureen Nicholson <laureennicholson@getautomatedrcm.com> (https://getautomatedrcm.com)",
