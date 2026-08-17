@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.laureennicholson635/automatedrcm-billing-mcp",
+  "description": "Medical-billing intelligence for AI agents: prior-auth checks, denial-code decoding, claim triage, appeal assessments, PHI de-id demo. Pay-per-call via x402 (USDC on Base) — no account or API key. Deterministic rules engines; no PHI accepted.",
+  "repository": {
+    "url": "https://github.com/laureennicholson635/automatedrcm-billing-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "automatedrcm-billing-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "X402_PRIVATE_KEY",
+          "description": "Optional. Private key of a wallet holding a little USDC on Base mainnet — enables the paid tools ($0.01–$1.50/call, gasless EIP-3009). Free tools (catalog, free_samples) work without it. Use a dedicated low-balance wallet.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
