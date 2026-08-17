@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.laureennicholson635/automatedrcm-billing-mcp",
-  "description": "Medical-billing intelligence for AI agents: prior-auth checks, denial-code decoding, claim triage, appeal assessments, PHI de-id demo. Pay-per-call via x402 (USDC on Base) — no account or API key. Deterministic rules engines; no PHI accepted.",
+  "description": "Medical-billing tools for AI agents: prior-auth checks, denial decoding, claim triage, appeals.",
   "repository": {
     "url": "https://github.com/laureennicholson635/automatedrcm-billing-mcp",
     "source": "github"
