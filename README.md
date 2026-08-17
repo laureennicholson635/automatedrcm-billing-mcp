@@ -14,7 +14,8 @@ Built by [AutomatedRCM](https://getautomatedrcm.com) — an AI-powered medical b
 | `denial_decode` | CARC code (CO-50, PR-204, …) → plain-English meaning, appealability, next action, prevention | $0.02 |
 | `claim_triage` | Unpaid claim → work bucket, risk flags, priority score, next action + deadline | $0.03 |
 | `appeal_assessment` | Denied claim → appeal/fix/write-off verdict, deadline math, evidence checklist, structured appeal-letter draft | $1.50 |
-| `phi_scrub_demo` | De-identify text (synthetic/test data ONLY) with interval-preserving date timeline | $0.01 |
+| `pii_scrub` | De-identify ANY text before it reaches a third-party LLM/API — names, emails, phones, SSNs, credit cards (Luhn), IPs, addresses, IDs; interval-preserving date timeline; token map for local restore | $0.01 |
+| `phi_scrub_demo` | De-identify healthcare text (synthetic/test data ONLY) with interval-preserving date timeline | $0.01 |
 
 Payments use the [x402 protocol](https://docs.cdp.coinbase.com/x402/welcome) — USDC on Base, settled per call, no account or API key.
 
