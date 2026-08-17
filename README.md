@@ -20,13 +20,27 @@ Payments use the [x402 protocol](https://docs.cdp.coinbase.com/x402/welcome) —
 
 ## Setup
 
+Easiest — no install, straight from npm:
+
+```json
+{
+  "mcpServers": {
+    "automatedrcm-billing": {
+      "command": "npx",
+      "args": ["-y", "automatedrcm-billing-mcp"],
+      "env": { "X402_PRIVATE_KEY": "0x..." }
+    }
+  }
+}
+```
+
+Or from source:
+
 ```bash
 git clone https://github.com/laureennicholson635/automatedrcm-billing-mcp
 cd automatedrcm-billing-mcp
 npm install
 ```
-
-Claude Desktop / Claude Code config:
 
 ```json
 {
